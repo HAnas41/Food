@@ -1,24 +1,32 @@
 import React from "react";
+import Image from "next/image";
 
 export default function AboutFeedback() {
   return (
     <div className="flex items-center justify-start lg:justify-start mt-4">
       <div className="flex items-center gap-2">
-        <img
-          src="/images/men1.jpg" // Replace with the actual path
-          alt="Customer 1"
-          className="w-10 h-10 rounded-full"
-        />
-        <img
-          src="/images/men2.jpg"
-          alt="Customer 2"
-          className="w-10 h-10 rounded-full"
-        />
-        <img
-          src="/images/men3.jpg"
-          alt="Customer 3"
-          className="w-10 h-10 rounded-full"
-        />
+        
+        <Image 
+           src="/images/men1.jpg" 
+            alt="Customer 1" 
+           width={40} 
+             height={40} 
+           className="rounded-full"
+/>
+<Image 
+  src="/images/men2.jpg" 
+  alt="Customer 2" 
+  width={40} 
+  height={40} 
+  className="rounded-full"
+/>
+<Image 
+  src="/images/men3.jpg" 
+  alt="Customer 3" 
+  width={40} 
+  height={40} 
+  className="rounded-full"
+/>
       </div>
       <div className="ml-4">
         <p className="text-sm text-gray-800 font-semibold">

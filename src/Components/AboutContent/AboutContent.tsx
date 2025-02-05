@@ -8,9 +8,9 @@ export default function AboutContent() {
         What Our Customers Say About Us
       </h2>
       <p className="text-gray-600 text-sm lg:text-base ">
-        "I had the pleasure of dining at Foodi last night, and I'm still raving
+        I had the pleasure of dining at Foodi last night and Im still raving
         about the experience! The attention to detail in presentation and
-        service was impeccable."
+        service was impeccable.
       </p>
     </div>
   );

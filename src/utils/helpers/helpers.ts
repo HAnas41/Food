@@ -1,8 +1,7 @@
-import Home from "@/app/page";
 import { Navlisttype } from "../Type/Type";
 
 // Dynamic Navigation List
- export let NavItems: Navlisttype[] = [
+ export const NavItems: Navlisttype[] = [
     { link: '/' , list: "Home" },
     { link: '/menu', list: "Menu" },
     { link: '/contact', list: "Contact Us" },
@@ -17,7 +16,7 @@ export interface Category {
   popular: boolean;
 }
 
-let categories: Category[] = [
+const categories: Category[] = [
   {
     title: "Main Dish",
     description: "86 dishes",

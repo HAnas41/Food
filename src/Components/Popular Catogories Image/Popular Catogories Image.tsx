@@ -1,5 +1,6 @@
 // PopularCategoriesImages.tsx
 import React from "react";
+import Image from "next/image";
 // Ensure correct path
 import categories, { Category } from "@/utils/helpers/helpers";
 
@@ -21,11 +22,16 @@ const PopularCategoriesImages: React.FC<PopularCategoriesImagesProps> = ({ filte
           className="bg-white p-6 rounded-lg shadow-lg hover:shadow-xl hover:scale-105 duration-300"
         >
           <div className="w-20 h-20 mx-auto mb-4">
-            <img
-              src={category.image}
-              alt={category.title}
-              className="w-full h-full object-cover rounded-full"
-            />
+          import Image from next/image
+
+<Image
+  src={category.image}  // Dynamic source
+  alt={category.title}  // Dynamic alt text
+  width={500}  // You can adjust this according to the actual size of your image
+  height={500}  // Same here
+  className="rounded-full object-cover w-full h-full"
+/>
+
           </div>
           <h3 className="text-lg font-semibold text-gray-800 hover:text-green-500 transition-colors">
             {category.title}

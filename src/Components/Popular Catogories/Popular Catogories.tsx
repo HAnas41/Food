@@ -1,5 +1,4 @@
 "use client";
-
 import React, { useState } from "react";
 import PopularCategoriesImages from "../Popular Catogories Image/Popular Catogories Image";
 import PopularCategoriesContent from "../Popular Catogories content/Popular Catogories Content";
